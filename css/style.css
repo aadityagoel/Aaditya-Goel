@@ -4,7 +4,8 @@
 
 /* Variables */
 :root {
-    --main-color: #e02f6b;
+    --main-color: #14ff47;
+    --pink: #e02f6b;
     --blue: #0000ff;
     --blue-dark: #18293c;
     --orange: #ffa500;
@@ -12,13 +13,20 @@
     --pink-light: #efa2b4;
     --cyan-light: #aef1ee;
     --white: #ffffff;
-    --white-alpha-40: rgba(255, 255, 255, 0.4);
-    --white-alpha-25: rgba(255, 255, 255, 0.25);
-    --backdrop-filter-blur: blur(5px);
+    --white-alpha-40: rgba(255, 255, 255, 0.2);
+    --white-alpha-25: rgba(255, 255, 255, 0.05);
+    /* --white-alpha-40: rgba(255, 255, 255, 0.4);
+    --white-alpha-25: rgba(255, 255, 255, 0.25); */
+    --backdrop-filter-blur: blur(15px);
     --purple: #a960ee;
     --yellow: #ffcb57;
     --red: #ff333d;
     --light-blue: #90e0ff;
+    --background-color: #161623;
+    --light-green: #81F499;
+    --yellow-green: #DBF4A7;
+    --carolina-blue: #02A9EA;
+    --green: #14ff47;
 }
 
 /* Variables */
@@ -40,14 +48,15 @@ Global section start
 
 body {
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+    /* background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light)); */
+    background-color: var(--background-color);
     /* background: linear-gradient(to bottom right, var(--yellow), var(--red), var(--light-blue), var(--red), var(--purple), var(--purple),var(--light-blue),var(--light-blue),var(--purple)); */
     /* background-size: 1800% 2000%; */
     background-attachment: fixed;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    color: var(--blue-dark);
+    color: var(--white);
     line-height: 1.5;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
@@ -208,7 +217,7 @@ button {
 }
 
 .btn:hover {
-    color: var(--white);
+    color: var(--blue-dark);
 }
 
 .btn::before {
@@ -357,22 +366,22 @@ Global section end
     border-radius: 50%;
 }
 .bg-circles .circle-1{
-    height: 60px;
-    width: 60px;
-    background-color: var(--blue);
-    left: 5%;
-    top: 10%;
-    opacity: 0.3;
-    animation: zoomInOut 8s linear infinite;
+    height: 260px;
+    width: 260px;
+    background: var(--carolina-blue);
+    left: -5%;
+    top: -10%;
+    opacity: 0.6;
+    /* animation: zoomInOut 8s linear infinite; */
 }
 .bg-circles .circle-2{
     height: 80px;
     width: 80px;
-    background-color: var(--main-color);
+    background-color: var(--pink);
     left: 30%;
     top: 50%;
-    opacity: 0.4;
-    animation: bounceTop 5s ease-in-out infinite;
+    opacity: 0.6;
+    /* animation: bounceTop 5s ease-in-out infinite; */
 }
 .bg-circles .circle-3{
     height: 120px;
@@ -543,7 +552,7 @@ Header start
 .header .nav-inner ul li a {
     font-size: 40px;
     text-transform: capitalize;
-    color: var(--blue-dark);
+    color: var(--white);
     display: block;
     font-weight: 500;
     padding: 8px 15px;
@@ -685,7 +694,7 @@ about section start
     border: none;
     text-transform: capitalize;
     display: inline-block;
-    color: var(--blue-dark);
+    color: var(--white);
     font-size: 20px;
     cursor: pointer;
     font-weight: 500;
@@ -706,7 +715,7 @@ about section start
     bottom: 0;
     width: 0%;
     height: 1px;
-    background-color: var(--blue-dark);
+    background-color: var(--white);
     transition: width 0.3s ease;
 }
 
@@ -938,7 +947,7 @@ Contact section start
 }
 
 .contact-form .input-control::placeholder {
-    color: var(--blue-dark);
+    color: var(--white);
     opacity: 0.8;
     font-weight: 300;
 }
@@ -954,7 +963,7 @@ Contact section start
     font-size: 16px;
     background-color: var(--white-alpha-25);
     padding: 0 20px;
-    color: var(--blue-dark);
+    color: var(--white);
     border: 1px solid transparent;
     transition: border-color 0.3s ease;
 }
