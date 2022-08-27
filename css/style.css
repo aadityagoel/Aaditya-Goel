@@ -828,6 +828,7 @@ Portfolio section start
 .portfolio-item-thumbnail img {
     width: 100%;
     border-radius: 10px;
+    height: 240px;
 }
 
 .portfolio-item h3 {
